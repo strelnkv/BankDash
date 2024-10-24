@@ -362,33 +362,32 @@ body {
   max-width: 870px;
   width: 100%;
   background-color: white;
-  &__form-group {
-    position: relative;
+}
+.form-group {
+  position: relative;
 
-    input,
-    select {
-      width: 100%;
-      max-width: 418px;
-      padding: 16px 20px;
-      border: 1px solid #dfeaf2;
-      border-radius: 15px;
-      box-sizing: border-box;
-      color: $light-blue;
-      font-weight: $font-regular;
+  input,
+  select {
+    width: 100%;
+    max-width: 418px;
+    padding: 16px 20px;
+    border: 1px solid #dfeaf2;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: $light-blue;
+    font-weight: $font-regular;
 
-      outline: none;
-      transition: border-color 0.2s;
-    }
+    outline: none;
+    transition: border-color 0.2s;
+  }
 
-    select {
-      appearance: none;
-      background: url("../assets/images/Vector\ 4.svg") no-repeat right 25px
-        center;
-      cursor: pointer;
-    }
+  select {
+    appearance: none;
+    background: url("../assets/images/Vector\ 4.svg") no-repeat right 25px
+      center;
+    cursor: pointer;
   }
 }
-
 label {
   font-weight: bold;
   display: block;
@@ -410,7 +409,7 @@ select:focus {
   label {
     font-size: 13px;
   }
-  &__form-group {
+  .form-group {
     input,
     select {
       font-size: 12px;

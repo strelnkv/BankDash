@@ -203,13 +203,13 @@ body {
 
 .settings-content {
   margin: 30px 40px;
-  padding: 37px 30px;
+  padding: 40px 30px;
   background-color: white;
   border-radius: 25px;
 
   &__tabs {
     margin-left: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 11px;
     border-bottom: 1px solid #f4f5f7;
     display: flex;
     align-items: center;
@@ -236,7 +236,7 @@ body {
       height: 3px;
       background-color: blue;
       position: absolute;
-      bottom: -10px;
+      bottom: -12px;
       left: -16px;
       border-top-left-radius: 100px;
       border-top-right-radius: 100px;
@@ -362,31 +362,30 @@ body {
   max-width: 870px;
   width: 100%;
   background-color: white;
-}
+  &__form-group {
+    position: relative;
 
-.form-group {
-  position: relative;
+    input,
+    select {
+      width: 100%;
+      max-width: 418px;
+      padding: 16px 20px;
+      border: 1px solid #dfeaf2;
+      border-radius: 15px;
+      box-sizing: border-box;
+      color: $light-blue;
+      font-weight: $font-regular;
 
-  input,
-  select {
-    width: 100%;
-    max-width: 418px;
-    padding: 16px 20px;
-    border: 1px solid #dfeaf2;
-    border-radius: 15px;
-    box-sizing: border-box;
-    color: $light-blue;
-    font-weight: $font-regular;
+      outline: none;
+      transition: border-color 0.2s;
+    }
 
-    outline: none;
-    transition: border-color 0.2s;
-  }
-
-  select {
-    appearance: none;
-    background: url("../assets/images/Vector\ 4.svg") no-repeat right 25px
-      center;
-    cursor: pointer;
+    select {
+      appearance: none;
+      background: url("../assets/images/Vector\ 4.svg") no-repeat right 25px
+        center;
+      cursor: pointer;
+    }
   }
 }
 
@@ -411,7 +410,7 @@ select:focus {
   label {
     font-size: 13px;
   }
-  .form-group {
+  &__form-group {
     input,
     select {
       font-size: 12px;
